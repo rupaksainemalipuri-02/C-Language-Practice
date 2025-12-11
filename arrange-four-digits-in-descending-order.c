@@ -11,11 +11,11 @@ int main()
     c = (N%=100, N/10);
     d = N%10;
     
-    if (a>b && a>c && a>d){
+    if (a>=b && a>=c && a>=d){
         d1 = a;
-        if (b>c && b>d){
+        if (b>=c && b>=d){
             d2 = b;
-            if (c>d){
+            if (c>=d){
                 d3 = c;
                 d4 = d;
             }
@@ -24,9 +24,9 @@ int main()
                 d4 = c;
             }
         }
-        if (c>d && c>b){
+        if (c>=d && c>=b){
             d2 = c;
-            if (b>d){
+            if (b>=d){
                 d3 = b;
                 d4 = d;
             }
@@ -35,23 +35,23 @@ int main()
                 d4 = b;
             }
         }
-        if (d>c && d>b){
+        if (d>=c && d>=b){
             d2 = d;
-            if (c>d){
+            if (c>=b){
                 d3 = c;
-                d4 = d;
+                d4 = b;
             }
             else{
-                d3 = d;
+                d3 = b;
                 d4 = c;
             }
         }
     }
-    else if (b>a && b>c && b>d){
+    else if (b>=a && b>=c && b>=d){
         d1 = b;
-        if (a>c && a>d){
+        if (a>=c && a>=d){
             d2 = a;
-            if (c>d){
+            if (c>=d){
                 d3 = c;
                 d4 = d;
             }
@@ -60,9 +60,9 @@ int main()
                 d4 = c;
             }
         }
-        if (c>d && c>a){
+        if (c>=d && c>=a){
             d2 = c;
-            if (b>d){
+            if (b>=d){
                 d3 = a;
                 d4 = d;
             }
@@ -71,9 +71,9 @@ int main()
                 d4 = a;
             }
         }
-        if (d>c && d>a){
+        if (d>=c && d>=a){
             d2 = d;
-            if (c>a){
+            if (c>=a){
                 d3 = c;
                 d4 = a;
             }
@@ -83,11 +83,11 @@ int main()
             }
         }
     }
-    else if (c>a && c>b && c>d){
+    else if (c>=a && c>=b && c>=d){
         d1 = c;
-        if (b>a && b>d){
+        if (b>=a && b>=d){
             d2 = b;
-            if (c>d){
+            if (c>=d){
                 d3 = a;
                 d4 = d;
             }
@@ -96,9 +96,9 @@ int main()
                 d4 = a;
             }
         }
-        else if (a>d && a>b){
+        else if (a>=d && a>=b){
             d2 = a;
-            if (b>d){
+            if (b>=d){
                 d3 = b;
                 d4 = d;
             }
@@ -107,9 +107,9 @@ int main()
                 d4 = b;
             }
         }
-        else if (d>a && d>b){
+        else if (d>=a && d>=b){
             d2 = d;
-            if (a>b){
+            if (a>=b){
                 d3 = a;
                 d4 = b;
             }
@@ -119,11 +119,11 @@ int main()
             }
         }
     }
-    else if (d>a && d>c && d>b){
+    else if (d>=a && d>=c && d>=b){
         d1 = d;
-        if (b>c && b>a){
+        if (b>=c && b>=a){
             d2 = b;
-            if (c>a){
+            if (c>=a){
                 d3 = c;
                 d4 = a;
             }
@@ -132,9 +132,9 @@ int main()
                 d4 = c;
             }
         }
-        else if (c>a && c>b){
+        else if (c>=a && c>=b){
             d2 = c;
-            if (b>a){
+            if (b>=a){
                 d3 = b;
                 d4 = a;
             }
@@ -143,14 +143,14 @@ int main()
                 d4 = b;
             }
         }
-        else if (a>c && a>b){
+        else if (a>=c && a>=b){
             d2 = a;
-            if (c>d){
+            if (c>=b){
                 d3 = c;
-                d4 = d;
+                d4 = b;
             }
             else{
-                d3 = d;
+                d3 = b;
                 d4 = c;
             }
         }
